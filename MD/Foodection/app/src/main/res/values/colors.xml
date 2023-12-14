@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#31C48D</color>
+    <color name="txt_regis">#CACACC</color>
+    <color name="txt_lupa_pass">#CCCCCC</color>
+    <color name="pink">#E14099</color>
+    <color name="dark_pink">#70224D</color>
+    <color name="dark_green">#1B3C1D</color>
+    <color name="white_green">#E1EBE7</color>
+</resources>

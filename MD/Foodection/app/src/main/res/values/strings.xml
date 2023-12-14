@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Foodection</string>
+    <string name="btn_splash_screen">Get Started</string>
+    <string name="welcome_app_name">Foodection</string>
+    <string name="welcome_slogan">Scan, Sehat, Santap</string>
+    <string name="welcome_text">Create a Healthy Lifestyle with Selected Vegetables</string>
+    <string name="btn_welcome_login">Login</string>
+    <string name="welcome_register">Register</string>
+    <string name="regis_username">Username</string>
+    <string name="regis_email">Email</string>
+    <string name="regis_nomor_telepon">Nomor Telepon</string>
+    <string name="regis_password">Password</string>
+    <string name="btn_register">Register</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_lupa_password">Lupa Password??</string>
+    <string name="login_email">Email</string>
+    <string name="pengguna">Pengguna</string>
+    <string name="pemilik">Pemilik</string>
+    <string name="profile_nama_lengkap">Nama Lengkap</string>
+    <string name="heading_profile">Profile</string>
+    <string name="profile_nomor_telepon">Nomor Telepon</string>
+    <string name="btn_simpan">Simpan</string>
+    <string name="greeting_home">Selamat Datang</string>
+    <string name="home_nama_lengkap">Nama Lengkap</string>
+    <string name="home_live_scan">Live Scan</string>
+    <string name="home_gallery">Gallery</string>
+    <string name="home_open_camera">Open Camera</string>
+    <string name="home_cari_sayur">Cari Sayur</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>
