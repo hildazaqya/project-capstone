@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1082100143023",
+    "project_id": "foodection-dc6c0",
+    "storage_bucket": "foodection-dc6c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082100143023:android:e9fa56f2b38979addfd55a",
+        "android_client_info": {
+          "package_name": "com.example.foodection"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-uOQVNSWYmI0hE2pKQOHHhaw6f4M44IQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

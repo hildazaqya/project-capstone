@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/welcome_app_name"
+        android:textColor="@color/green"
+        android:textSize="64sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/welcome_slogan"
+        android:textColor="@color/green"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <RadioGroup
+        android:id="@+id/toggle"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/pink_out_line"
+        android:checkedButton="@+id/offer"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/pengguna"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toogle_widget_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/pengguna"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/pemilik"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/toogle_widget_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/pemilik"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/regis_username"
+        android:layout_width="315dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/edt_register"
+        android:hint="@string/regis_username"
+        android:paddingStart="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/txt_regis"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/regis_email"
+        android:layout_width="315dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edt_register"
+        android:hint="@string/regis_email"
+        android:paddingStart="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/txt_regis"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regis_username" />
+
+    <EditText
+        android:id="@+id/regis_notelp"
+        android:layout_width="315dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edt_register"
+        android:hint="@string/regis_nomor_telepon"
+        android:paddingStart="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/txt_regis"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regis_email" />
+
+    <EditText
+        android:id="@+id/regis_password"
+        android:layout_width="315dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edt_register"
+        android:hint="@string/regis_password"
+        android:paddingStart="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/txt_regis"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regis_notelp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="315dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="102dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/btn_register"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regis_password" />
+</androidx.constraintlayout.widget.ConstraintLayout>
