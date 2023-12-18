@@ -43,19 +43,19 @@
 
     <TextView
         android:id="@+id/cari_toko"
-        android:layout_width="53dp"
-        android:layout_height="45dp"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
         android:layout_marginTop="104dp"
-        android:background="@drawable/keranjang"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/baseline_shopping_cart_24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.87"
-        app:layout_constraintStart_toEndOf="@+id/profile"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="315dp"
         android:layout_height="118dp"
+        android:layout_marginBottom="100dp"
         android:background="@drawable/home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,21 +69,18 @@
         android:text="@string/welcome_slogan"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
 
     <TextView
         android:id="@+id/live_scan_btn"
         android:layout_width="69dp"
         android:layout_height="70dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="80dp"
-        android:background="@drawable/livescanbtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
+        android:background="@drawable/ic_scan"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         tools:ignore="MissingConstraints" />
@@ -92,87 +89,77 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="6dp"
         android:layout_marginTop="8dp"
         android:text="@string/home_live_scan"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.156"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/live_scan_btn"
+        app:layout_constraintStart_toStartOf="@+id/live_scan_btn"
         app:layout_constraintTop_toBottomOf="@+id/live_scan_btn" />
 
     <TextView
         android:id="@+id/open_gallery"
-        android:layout_width="139dp"
-        android:layout_height="112dp"
-        android:layout_marginTop="56dp"
-        android:background="@drawable/homegallery"
+        android:layout_width="69dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/baseline_image_24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.69"
-        app:layout_constraintStart_toEndOf="@+id/live_scan_btn"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="158dp"
+        android:layout_marginTop="8dp"
         android:text="@string/home_gallery"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.627"
-        app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintEnd_toEndOf="@+id/open_gallery"
+        app:layout_constraintStart_toStartOf="@+id/open_gallery"
+        app:layout_constraintTop_toBottomOf="@+id/open_gallery" />
 
     <TextView
         android:id="@+id/open_camera"
-        android:layout_width="92dp"
-        android:layout_height="79dp"
-        android:layout_marginTop="63dp"
-        android:layout_marginEnd="80dp"
-        android:background="@drawable/opencamera"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.172"
+        android:layout_width="69dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/baseline_photo_camera_24"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/live_scan_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:text="@string/home_open_camera"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/open_camera"
+        app:layout_constraintStart_toStartOf="@+id/open_camera"
         app:layout_constraintTop_toBottomOf="@+id/open_camera" />
 
     <TextView
         android:id="@+id/cari_sayur"
-        android:layout_width="76dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="38dp"
-        android:background="@drawable/carisayur"
+        android:layout_width="69dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/baseline_search_24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.618"
-        app:layout_constraintStart_toEndOf="@+id/open_camera"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
         android:text="@string/home_cari_sayur"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cari_sayur"
         app:layout_constraintHorizontal_bias="0.646"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/cari_sayur"
         app:layout_constraintTop_toBottomOf="@+id/cari_sayur" />
 </androidx.constraintlayout.widget.ConstraintLayout>

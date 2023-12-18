@@ -30,14 +30,20 @@ class ShopAdapter(private val shopList : ArrayList<ShopOwner>) : RecyclerView.Ad
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val listShop = shopList[position]
+
+        // fix bug
         val photoURL = listShop.getphotoShop()
-        val photo : Uri = Uri.parse(photoURL)
+        if (!photoURL.isNullOrEmpty()) {
+            val photo : Uri = Uri.parse(photoURL)
+            Picasso.get().load(photo).into(holder.ivphotoShop)
+        } //fix bug
+
         holder.tvnamaToko.text = listShop.getShopName()
         holder.tvOwner.text = listShop.getowner()
         holder.phone.text = listShop.getPhone()
         holder.tvAddress.text = listShop.getAddress()
 
-        Picasso.get().load(photo).into(holder.ivphotoShop)
+//        Picasso.get().load(photo).into(holder.ivphotoShop)
     }
 
     override fun getItemCount(): Int = shopList.size

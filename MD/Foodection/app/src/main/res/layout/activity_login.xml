@@ -76,8 +76,8 @@
 
     <EditText
         android:id="@+id/login_email"
-        android:layout_width="328dp"
-        android:layout_height="79dp"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
         android:layout_marginTop="146dp"
         android:paddingStart="16dp"
         android:textSize="16sp"
@@ -91,8 +91,8 @@
 
     <EditText
         android:id="@+id/login_password"
-        android:layout_width="328dp"
-        android:layout_height="79dp"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/edt_login"
         android:hint="@string/login_password"
@@ -113,9 +113,7 @@
         android:textColor="@color/txt_lupa_pass"
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/login_password"
         app:layout_constraintTop_toBottomOf="@+id/login_password" />
 
     <Button
@@ -125,7 +123,7 @@
         android:layout_marginTop="172dp"
         android:backgroundTint="@color/green"
         android:text="@string/btn_welcome_login"
-        android:textSize="32sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_password" />
