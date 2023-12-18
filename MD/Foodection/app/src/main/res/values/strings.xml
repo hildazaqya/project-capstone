@@ -28,4 +28,17 @@
     <string name="home_open_camera">Open Camera</string>
     <string name="home_cari_sayur">Cari Sayur</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="cari_toko">Cari Toko</string>
+    <string name="detail_toko">Detail Toko</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="ulasan">Ulasan</string>
+    <string name="edit_toko">Edit Toko</string>
+    <string name="nama_toko">Nama Toko</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="alamat">Alamat</string>
+    <string name="deskripsi_toko">Deskripsi Toko</string>
+    <string name="gambar_toko">Gambar Toko</string>
+    <string name="pilih_foto">Pilih Foto</string>
+    <string name="tambah_toko">Tambah Toko</string>
 </resources>

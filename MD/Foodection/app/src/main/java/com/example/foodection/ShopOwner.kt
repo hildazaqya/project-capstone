@@ -1,7 +1,5 @@
 package com.example.foodection
 
-import android.os.Parcelable
-
 class ShopOwner {
     private var shopName: String? = null
     private var latitude: String? = null

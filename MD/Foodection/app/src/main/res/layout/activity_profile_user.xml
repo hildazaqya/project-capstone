@@ -44,10 +44,10 @@
         android:id="@+id/user_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="35dp"
         android:text="@string/profile_nama_lengkap"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_profile" />
@@ -59,7 +59,7 @@
         android:layout_marginTop="10dp"
         android:text="@string/profile_nomor_telepon"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/user_name" />
@@ -68,7 +68,8 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
         android:text="@string/profile_nama_lengkap"
         android:textColor="@color/black"
         android:textSize="14sp"
@@ -79,13 +80,13 @@
 
     <EditText
         android:id="@+id/edt_profile_nama"
-        android:layout_width="400dp"
+        android:layout_width="350dp"
         android:layout_height="65dp"
         android:layout_marginTop="12dp"
-        android:paddingStart="12dp"
-        android:textSize="16sp"
-        android:textColor="@color/black"
         android:background="@drawable/edt_register"
+        android:paddingStart="12dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
@@ -94,24 +95,25 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
         android:text="@string/profile_nomor_telepon"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_profile_nama" />
 
     <EditText
         android:id="@+id/edt_profile_notelp"
-        android:layout_width="400dp"
+        android:layout_width="350dp"
         android:layout_height="65dp"
         android:layout_marginTop="64dp"
-        android:paddingStart="12dp"
-        android:textSize="16sp"
-        android:textColor="@color/black"
         android:background="@drawable/edt_register"
+        android:paddingStart="12dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_profile_nama" />
@@ -120,15 +122,14 @@
         android:id="@+id/btn_save"
         android:layout_width="315dp"
         android:layout_height="65dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="@color/green"
         android:text="@string/btn_simpan"
         android:textColor="@color/white"
-        android:textSize="32sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_profile_notelp" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
