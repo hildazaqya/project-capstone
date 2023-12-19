@@ -115,10 +115,4 @@ class TambahToko : AppCompatActivity() {
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
-
-//    private fun updateUI(currentUser: FirebaseUser?) {
-//        if (currentUser != null){
-//            startActivity(Intent(this@TambahToko, DetailToko::class.java))
-//        }
-//    }
 }
