@@ -1,5 +1,6 @@
 package com.example.foodection
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -21,6 +22,8 @@ class CariTokoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cari_toko)
 
+        auth = FirebaseAuth.getInstance()
+
         rvShopLists = findViewById(R.id.toko_list)
         rvShopLists.setHasFixedSize(true)
 
@@ -30,8 +33,8 @@ class CariTokoActivity : AppCompatActivity() {
     private fun loadDataToko(){
         db.collection("Toko").get().addOnSuccessListener { queryDocumentSnapshots ->
             if(!queryDocumentSnapshots.isEmpty){
-                for (Shops in queryDocumentSnapshots){
-                    val listShop = Shops.toObject(ShopOwner::class.java)
+                for (shops in queryDocumentSnapshots){
+                    val listShop = shops.toObject(ShopOwner::class.java)
                     shopList.add(listShop)
                 }
             }
@@ -39,6 +42,19 @@ class CariTokoActivity : AppCompatActivity() {
             rvShopLists.layoutManager = LinearLayoutManager(this)
             val shopListAdapter = ShopAdapter(shopList)
             rvShopLists.adapter = shopListAdapter
+
+            shopListAdapter.setOnItemClickCallback(object : ShopAdapter.OnItemClickCallback{
+                override fun onItemClicked(data: ShopOwner) {
+                    showSelectedShop(data)
+                }
+            })
         }
+    }
+
+    private fun showSelectedShop(shopList : ShopOwner){
+        val gotoDetail = Intent(this@CariTokoActivity, DetailTokoUserActivity::class.java)
+        ShopOwner.getInstance().setUserName(shopList.getUserName())
+        ShopOwner.getInstance().setPhone(shopList.getPhone())
+        startActivity(gotoDetail)
     }
 }

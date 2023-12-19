@@ -4,6 +4,7 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.foodection.databinding.ActivityMainBinding
@@ -29,6 +30,12 @@ class MainActivity : AppCompatActivity() {
 
         val userID = Account.getInstance().getUserID().toString()
         val jenisAkun = Account.getInstance().getjenisAkun().toString()
+
+        //INI KU EDIT//
+        if (jenisAkun == "Pemilik"){
+            binding.cariToko.visibility = View.GONE
+        }
+
         loadDatabase(userID,jenisAkun)
 
         binding.liveScanBtn.setOnClickListener {
@@ -47,6 +54,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this@MainActivity, CariTokoActivity::class.java))
         }
 
+        binding.cariSayur.setOnClickListener{
+            startActivity(Intent(this@MainActivity,MapsActivity::class.java))
+        }
+
     }
 
     private fun getPermission() {
@@ -63,7 +74,6 @@ class MainActivity : AppCompatActivity() {
         db.collection(jenisAkun).whereEqualTo("userID", userID)
             .addSnapshotListener{ value, _ ->
                 assert(value != null)
-
                 if (!value!!.isEmpty) {
                     for (snapshot in value) {
                         binding.userName.text = snapshot.getString("nama")
@@ -71,7 +81,6 @@ class MainActivity : AppCompatActivity() {
                         photoProfile = Uri.parse(photoPath)
                         Picasso.get().load(photoProfile).into(binding.profile)
                     }
-
                 }
             }
     }

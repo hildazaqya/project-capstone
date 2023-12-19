@@ -157,4 +157,14 @@ class ProfileOwnerActivity : AppCompatActivity() {
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
+
+    // Tambahan
+    override fun onRestart() {
+        super.onRestart()
+        finish()
+        startActivity(intent)
+        Account.getInstance().setUserID(userID)
+        Account.getInstance().setjenisAkun("Pemilik")
+        loadDatabase(Account.getInstance().getUserID().toString(), Account.getInstance().getjenisAkun().toString())
+    }
 }

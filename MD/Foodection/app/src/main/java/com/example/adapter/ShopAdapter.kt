@@ -1,6 +1,5 @@
 package com.example.adapter
 
-import android.content.Context
 import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
@@ -13,7 +12,11 @@ import com.example.foodection.ShopOwner
 import com.squareup.picasso.Picasso
 
 class ShopAdapter(private val shopList : ArrayList<ShopOwner>) : RecyclerView.Adapter<ShopAdapter.ListViewHolder>(){
-    var context: Context? = null
+    private lateinit var onItemClickCallback : OnItemClickCallback
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback){
+        this.onItemClickCallback = onItemClickCallback
+    }
 
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val tvnamaToko: TextView = itemView.findViewById(R.id.tvnamaToko)
@@ -44,6 +47,10 @@ class ShopAdapter(private val shopList : ArrayList<ShopOwner>) : RecyclerView.Ad
         holder.tvAddress.text = listShop.getAddress()
 
 //        Picasso.get().load(photo).into(holder.ivphotoShop)
+    }
+
+    interface OnItemClickCallback {
+        fun onItemClicked(data: ShopOwner)
     }
 
     override fun getItemCount(): Int = shopList.size

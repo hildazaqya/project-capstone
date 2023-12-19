@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailTokoOwner">
+    tools:context=".DetailTokoUserActivity">
+
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/navbar"
@@ -44,12 +45,11 @@
         android:id="@+id/field_detail_toko"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
+        android:scrollbars="none"
         android:layout_marginTop="56dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/navbar"
-        app:layout_constraintTop_toTopOf="@id/navbar">
+        app:layout_constraintTop_toBottomOf="@id/navbar">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -72,25 +72,29 @@
                 >
 
                 <androidx.appcompat.widget.AppCompatImageButton
-                    android:id="@+id/pin_hapus_toko"
+                    android:id="@+id/pin_map_detail_toko"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginEnd="50dp"
                     android:background="@drawable/buttonimg"
-                    android:src="@drawable/delete"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@id/pin_edit_edit">
+                    android:src="@drawable/pinmap"
+                    app:layout_constraintEnd_toStartOf="@+id/pin_telp_toko"
+                    app:layout_constraintHorizontal_bias="0.989"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
                 </androidx.appcompat.widget.AppCompatImageButton>
 
                 <androidx.appcompat.widget.AppCompatImageButton
-                    android:id="@+id/pin_edit_edit"
+                    android:id="@+id/pin_telp_toko"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
+                    android:layout_marginEnd="4dp"
                     android:background="@drawable/buttonimg"
-                    android:layout_marginEnd="10dp"
-                    android:src="@drawable/editdetail"
+                    android:src="@drawable/phonesmall"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -127,12 +131,12 @@
                         android:textColor="@color/black"
                         android:layout_gravity="center_vertical"
                         android:drawablePadding="10dp"
-                        app:drawableLeftCompat="@drawable/pemiliktokodetail">
+                        app:drawableLeftCompat="@drawable/pemilikdetailtoko">
                     </TextView>
 
                     <TextView
                         android:id="@+id/notelp_pemilik_detail_toko"
-                        android:layout_width="180dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:textColor="@color/black"
                         android:drawablePadding="10dp"
@@ -162,11 +166,11 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:background="@drawable/edt_register"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
                 android:padding="10dp"
                 android:orientation="vertical">
 
@@ -185,19 +189,18 @@
                 </TextView>
 
                 <TextView
-                    android:id="@+id/txt_detail_toko"
+                    android:id="@+id/deskripsi_toko_detail"
                     android:layout_width="match_parent"
+                    android:layout_height="120dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
-                    android:layout_height="120dp"
                     android:justificationMode="inter_word"
                     android:textColor="@color/black">
                 </TextView>
 
             </LinearLayout>
 
-
-            <!--            INI KU UBAH -->
+            <!--INI KU UBAH-->
             <LinearLayout
                 android:id="@+id/fieldBarang"
                 android:layout_width="match_parent"
@@ -221,23 +224,8 @@
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:textSize="18sp"
-                    app:drawableLeftCompat="@drawable/desctokosmall">
+                    app:drawableLeftCompat="@drawable/goods">
                 </TextView>
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/button_Tambah_Barang"
-                    android:layout_width="140dp"
-                    android:layout_height="40dp"
-                    android:text="Tambah Barang"
-                    android:textColor="@color/black"
-                    android:background="@drawable/ripplebutton"
-                    android:backgroundTint="@color/white"
-                    android:textStyle="bold"
-                    android:textSize="16sp"
-                    android:layout_margin="10dp"
-                    android:layout_gravity="center"
-                    android:textAllCaps="false">
-                </androidx.appcompat.widget.AppCompatButton>
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
@@ -263,8 +251,6 @@
 
         </LinearLayout>
 
-
     </ScrollView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
