@@ -49,12 +49,15 @@ Fork the repository to your GitHub account.
 
 <img width="258" alt="image" src="https://github.com/hildazaqya/project-capstone/assets/100751818/9b3d3d1d-abc1-4376-a592-efdf980f2349">
 
-git clone https://github.com/your-username/food-freshness-app.git
+
+```bash
+git clone [https://github.com/your-username/food-freshness-app.git](https://github.com/hildazaqya/project-capstone.git)
 
 **  3. Create a Branch**
 
 Create a new branch for your feature or bug fix.
 
+```bash
 git checkout -b feature/new-feature
 
 ** 4. Make Changes**
@@ -69,6 +72,7 @@ Ensure that your changes work as expected and do not introduce new issues.
 
 Commit your changes with a clear and descriptive commit message.
 
+```bash
 git commit -m "Add new feature: Feature Name"
 
 ** 7. Push to Your Fork**
