@@ -1,4 +1,8 @@
-<center> # Foodection App </center>
+<center> 
+  
+  # Foodection App 
+  
+  </center>
 <img src="foodection-high-resolution-logo.png" />
 
 # Bangkit 2023 Batch 2 Capstone Team : CH2-PS364
@@ -90,3 +94,6 @@ git push origin feature/new-feature
 ### 8. Submit a Pull Request
 - Open a pull request from your fork to the main repository.
 - Include a detailed description of your changes.
+
+
+## License
