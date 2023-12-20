@@ -1,6 +1,7 @@
 <img src="foodection-high-resolution-logo.png" />
 
-! # Bangkit 2023 Batch 2 Capstone Team : CH2-PS364
+Bangkit 2023 Batch 2 Capstone Team : CH2-PS364
+_______
 Hello everyone!. Here is our repository for Bangkit 2023 Capstone project. Our team consist of 3 Machine Learning, 2 Android, and 2 Cloud Computing.
 
 # This is Foodection Repository
