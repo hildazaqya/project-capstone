@@ -20,10 +20,18 @@ Foodection is an application designed to solve the problem of food waste on an o
 
 
 ## Machine Learning
-Lorem Ipsum
+In the model building stage, the machine learning team utilizes the following libraries:
+
+- TensorFlow
+- Pillow
+- Scikit-learn (Sklearn)
+- NumPy
+
+The team employs transfer learning techniques, implementing the RestNet50V2 architecture in a Convolutional Neural Network (CNN) algorithm to achieve the best model performance.
+
 
 ## Cloud Computing
-Lorem Ipsum
+The flow of making cloud computing is to create an architecture of the application to be created, then create a new project in gcp and activate the required api such as identity platform, firestore and so on. identity platform, firestore and so on. after that setting the app engine and cloud storage. Finally deploy the finished program or android.
 
 ## Mobile Development
 Lorem Ipsum
