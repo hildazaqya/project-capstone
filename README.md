@@ -32,7 +32,11 @@ The team employs transfer learning techniques, implementing the RestNet50V2 arch
 
 ## Cloud Computing
 The flow of making cloud computing is to create an architecture of the application to be created, then create a new project in gcp and activate the required api such as identity platform, firestore and so on. identity platform, firestore and so on. after that setting the app engine and cloud storage. Finally deploy the finished program or android.
+
 <img src="cloud-architecture-foodection.jpg" />
 
 ## Mobile Development
-Lorem Ipsum
+This mobile application is developed using the Kotlin programming language within Android Studio. The key features of the application include leveraging the Firebase library as a database. Additionally, our innovative scan feature integrates a Machine Learning model through an API connection to the cloud. This model is designed to analyze photos of food, providing predictions on the freshness of the items.
+
+<img width="393" alt="image" src="https://github.com/hildazaqya/project-capstone/assets/100751818/8a49ab1c-e44a-4c64-8cc2-dbf1eeb86141">
+
