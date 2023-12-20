@@ -45,13 +45,13 @@ This mobile application is developed using the Kotlin programming language withi
 
 Fork the repository to your GitHub account.
 
-### 2. Clone the Repository**
+### 2. Clone the Repository
 
 <img width="258" alt="image" src="https://github.com/hildazaqya/project-capstone/assets/100751818/9b3d3d1d-abc1-4376-a592-efdf980f2349">
 
 
 ```bash
-git clone [https://github.com/your-username/food-freshness-app.git](https://github.com/hildazaqya/project-capstone.git)
+git clone https://github.com/your-username/food-freshness-app.git
 ```
 
 ### 3. Create a Branch
