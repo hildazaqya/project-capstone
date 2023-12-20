@@ -1,8 +1,8 @@
-<center> 
+<h1 align="center"
   
   # Foodection App 
   
-  </center>
+  </h1>
 <img src="foodection-high-resolution-logo.png" />
 
 # Bangkit 2023 Batch 2 Capstone Team : CH2-PS364
