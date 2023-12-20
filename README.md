@@ -32,6 +32,7 @@ The team employs transfer learning techniques, implementing the RestNet50V2 arch
 
 ## Cloud Computing
 The flow of making cloud computing is to create an architecture of the application to be created, then create a new project in gcp and activate the required api such as identity platform, firestore and so on. identity platform, firestore and so on. after that setting the app engine and cloud storage. Finally deploy the finished program or android.
+<img src="cloud-architecture-foodection.jpg" width="80" height="80" />
 
 ## Mobile Development
 Lorem Ipsum
