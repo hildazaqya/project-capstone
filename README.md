@@ -40,3 +40,35 @@ This mobile application is developed using the Kotlin programming language withi
 
 <img width="393" alt="image" src="https://github.com/hildazaqya/project-capstone/assets/100751818/8a49ab1c-e44a-4c64-8cc2-dbf1eeb86141">
 
+#  Code Contribution
+1. **Fork the Repository**
+Fork the repository to your GitHub account.
+
+2. **Clone the Repository**
+
+git clone https://github.com/your-username/food-freshness-app.git
+
+3. **Create a Branch**
+Create a new branch for your feature or bug fix.
+
+git checkout -b feature/new-feature
+
+4.** Make Changes**
+Implement your changes and ensure they adhere to the project's coding standards.
+
+5. **Test Your Changes**
+Ensure that your changes work as expected and do not introduce new issues.
+
+6. **Commit Your Changes**
+Commit your changes with a clear and descriptive commit message.
+
+git commit -m "Add new feature: Feature Name"
+
+7. **Push to Your Fork**
+Push your changes to your fork on GitHub.
+
+git push origin feature/new-feature
+
+8. **Submit a Pull Request**
+- Open a pull request from your fork to the main repository.
+- Include a detailed description of your changes.
