@@ -46,6 +46,10 @@ class ShopAdapter(private val shopList : ArrayList<ShopOwner>) : RecyclerView.Ad
         holder.phone.text = listShop.getPhone()
         holder.tvAddress.text = listShop.getAddress()
 
+        holder.itemView.setOnClickListener{
+            onItemClickCallback.onItemClicked(shopList[holder.adapterPosition])
+        }
+
 //        Picasso.get().load(photo).into(holder.ivphotoShop)
     }
 

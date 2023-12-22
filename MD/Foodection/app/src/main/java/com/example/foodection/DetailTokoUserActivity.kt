@@ -22,6 +22,8 @@ class DetailTokoUserActivity : AppCompatActivity() {
     private lateinit var photoShop : Uri
     private val goodsList = ArrayList<Goods>()
 
+//    private lateinit var phone : String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailTokoUserBinding.inflate(layoutInflater)
@@ -31,13 +33,14 @@ class DetailTokoUserActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
         val usernameOwner = ShopOwner.getInstance().getUserName()
         val ownerNumber = ShopOwner.getInstance().getPhone().toString()
-        loadShop(usernameOwner)
+
+        if (usernameOwner!=null){
+            loadShop(usernameOwner)
+            loadDataBarang(usernameOwner)
+        }
 
         //TAMBAH
         binding.rvListGoods.setHasFixedSize(true)
-        if (usernameOwner != null) {
-            loadDataBarang(usernameOwner)
-        }
 
         // INI KU EDIT
         binding.pinMapDetailToko.setOnClickListener{
@@ -61,6 +64,7 @@ class DetailTokoUserActivity : AppCompatActivity() {
 
                 if (!value!!.isEmpty) {
                     for (snapshot in value) {
+                        //Ubah
                         binding.namaDetailToko.text = snapshot.getString("shopName")
                         binding.namaPemilikDetailToko.text = snapshot.getString("owner")
                         binding.notelpPemilikDetailToko.text = snapshot.getString("phone")

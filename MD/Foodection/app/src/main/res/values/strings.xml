@@ -41,4 +41,91 @@
     <string name="gambar_toko">Gambar Toko</string>
     <string name="pilih_foto">Pilih Foto</string>
     <string name="tambah_toko">Tambah Toko</string>
+    <string name="camera">Upload</string>
+    <string name="detail">Detail</string>
+    <string name="nama_sayur">Brocoli</string>
+    <string name="kondisi">Kondisi : </string>
+    <string name="hasil_kondisi">Hasil Kondisi</string>
+    <string name="kandungan">Kandungan : </string>
+    <string name="isi_kandungan">Hasil Kandungan</string>
+    <string name="hasil_detail">Hasil Detail</string>
+    <string name="cari_sayur">Cari Sayur</string>
+    <string name="select_image">Select Image</string>
+    <string name="predict">Predict</string>
+    <string name="prediction">Prediction</string>
+    <string name="marketplace">Marketplace</string>
+    <string name="tambah_barang">Tambah Barang</string>
+    <string name="gambar_barang">Gambar Barang</string>
+    <string name="harga_barang">Harga Barang</string>
+    <string name="nama_barang">Nama Barang</string>
+    <string name="stok_barang">Stok Barang</string>
+    <string name="nama_pemilik">Nama Pemilik</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="stok">Stok</string>
+
+    <string-array name="data_sayur">
+        <item>Kangkung</item>
+        <item>Kecambah</item>
+        <item>Kentang</item>
+        <item>Ketimun</item>
+        <item>Kubis</item>
+        <item>Jagung</item>
+        <item>Jamur</item>
+        <item>Lobak</item>
+        <item>Paprika</item>
+        <item>Wortel</item>
+    </string-array>
+
+    <string-array name="data_price">
+        <item>7000</item>
+        <item>8000</item>
+        <item>9000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>6000</item>
+        <item>8000</item>
+        <item>4000</item>
+        <item>2000</item>
+        <item>1000</item>
+    </string-array>
+
+    <integer-array name="data_poto">
+        <item>@drawable/kangkung</item>
+        <item>@drawable/kecambah</item>
+        <item>@drawable/kentang</item>
+        <item>@drawable/ketimun</item>
+        <item>@drawable/kubis</item>
+        <item>@drawable/jagung</item>
+        <item>@drawable/jamur</item>
+        <item>@drawable/lobak</item>
+        <item>@drawable/paprika</item>
+        <item>@drawable/wortel</item>
+    </integer-array>
+
+    <string-array name="data_kandungan">
+        <item>Kandungan : Vitamin C, Vitamin K, Serat, Kalium, Fosfor, Zat Besi</item>
+        <item>Kandungan : Vitamin C, Vitamin K, Serat, Kalium, Fosfor, Zat Besi</item>
+        <item>Kandungan : Vitamin C, Vitamin K, Serat, Kalium, Fosfor, Zat Besi</item>
+        <item>Kandungan : Vitamin C, Vitamin K, Serat, Kalium, Fosfor, Zat Besi</item>
+        <item>Kandungan : Vitamin C, Vitamin K, Serat, Kalium, Fosfor, Zat Besi</item>
+        <item>Kandungan : Vitamin C, Vitamin K, Serat, Kalium, Fosfor, Zat Besi</item>
+        <item>Kandungan : Vitamin C, Vitamin K, Serat, Kalium, Fosfor, Zat Besi</item>
+        <item>Kandungan : Vitamin C, Vitamin K, Serat, Kalium, Fosfor, Zat Besi</item>
+        <item>Kandungan : Vitamin C, Vitamin K, Serat, Kalium, Fosfor, Zat Besi</item>
+        <item>Kandungan : Vitamin C, Vitamin K, Serat, Kalium, Fosfor, Zat Besi</item>
+    </string-array>
+
+    <string-array name="data_detail">
+        <item>Kangkung adalah sayuran hijau yang sering digunakan dalam masakan Asia. Daunnya biasanya digunakan dalam berbagai hidangan, terutama tumis dan sup. Kangkung kaya akan vitamin dan mineral seperti vitamin A, vitamin C, zat besi, dan kalsium.</item>
+        <item>Kecambah adalah tunas pertama dari biji-bijian yang baru berkecambah. Biasanya diambil dari kacang-kacangan, biji alfalfa, kedelai, dll. Mereka merupakan sumber nutrisi yang kaya akan vitamin, mineral, protein, dan serat</item>
+        <item>Kentang adalah umbi yang sangat umum dalam masakan di seluruh dunia. Mengandung karbohidrat kompleks, serat, vitamin C, vitamin B6, potassium, dan nutrisi penting lainnya.</item>
+        <item>Ketimun adalah sayuran yang tergolong ke dalam famili labu-labuan. Biasanya dikonsumsi segar sebagai sayuran mentah dalam salad. Mengandung banyak air, serat, vitamin K, dan beberapa mineral</item>
+        <item>Kubis adalah jenis sayuran berdaun dan termasuk dalam keluarga kol. Tersedia dalam berbagai jenis seperti kubis hijau, kubis merah, kubis bunga, dan lainnya. Kaya akan vitamin C, vitamin K, serat, dan antioksidan.</item>
+        <item>Jagung adalah biji yang tumbuh pada tanaman jagung. Dapat dikonsumsi segar atau dalam bentuk yang dimasak. Kaya akan karbohidrat, serat, vitamin C, dan beberapa mineral.</item>
+        <item>Jamur adalah organisme fungi yang dapat dimakan dan hadir dalam berbagai jenis seperti jamur tiram, jamur kancing, shiitake, dan lainnya. Kaya akan protein, vitamin B, selenium, dan beberapa jenis jamur memiliki sifat antioksidan</item>
+        <item>Lobak adalah sayuran berakar yang tersedia dalam berbagai warna dan bentuk. Mengandung vitamin C, serat, potassium, dan zat-zat fitokimia yang bermanfaat untuk kesehatan.</item>
+        <item>Paprika adalah sayuran berupa buah dari tanaman cabai. Tersedia dalam berbagai warna seperti merah, kuning, hijau, dan lainnya. Kaya akan vitamin C, vitamin A, dan antioksidan seperti karotenoid dan flavonoid.</item>
+        <item>Wortel adalah sayuran berakar yang kaya akan beta-karoten, vitamin K1, serat, potassium, dan antioksidan. Baik untuk kesehatan mata dan memiliki manfaat untuk sistem kekebalan tubuh.</item>
+    </string-array>
+
 </resources>

@@ -35,10 +35,11 @@ class CariTokoActivity : AppCompatActivity() {
             if(!queryDocumentSnapshots.isEmpty){
                 for (shops in queryDocumentSnapshots){
                     val listShop = shops.toObject(ShopOwner::class.java)
-                    shopList.add(listShop)
+                    if (listShop.getShopName()!=null){
+                        shopList.add(listShop)
+                    }
                 }
             }
-
             rvShopLists.layoutManager = LinearLayoutManager(this)
             val shopListAdapter = ShopAdapter(shopList)
             rvShopLists.adapter = shopListAdapter

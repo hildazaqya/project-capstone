@@ -4,10 +4,11 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
-import android.view.View
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.foodection.databinding.ActivityMainBinding
+import com.example.utils.getImageUri
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.firestore
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private var db = Firebase.firestore
     private lateinit var photoProfile : Uri
+    private var currentImageUri: Uri? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,16 +33,8 @@ class MainActivity : AppCompatActivity() {
         val userID = Account.getInstance().getUserID().toString()
         val jenisAkun = Account.getInstance().getjenisAkun().toString()
 
-        //INI KU EDIT//
-        if (jenisAkun == "Pemilik"){
-            binding.cariToko.visibility = View.GONE
-        }
-
         loadDatabase(userID,jenisAkun)
 
-        binding.liveScanBtn.setOnClickListener {
-            startActivity(Intent(this@MainActivity, LiveScanActivity::class.java ))
-        }
 
         binding.profile.setOnClickListener {
             if (jenisAkun == "Pengguna"){
@@ -54,10 +48,24 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this@MainActivity, CariTokoActivity::class.java))
         }
 
-        binding.cariSayur.setOnClickListener{
-            startActivity(Intent(this@MainActivity,MapsActivity::class.java))
+        binding.openCamera.setOnClickListener {
+            startActivity(Intent(this@MainActivity, GalleryActivity::class.java))
+            startCamera()
         }
 
+        binding.openGallery.setOnClickListener {
+            startActivity(Intent(this@MainActivity, GalleryActivity::class.java))
+        }
+
+        binding.cariSayur.setOnClickListener {
+            startActivity(Intent(this@MainActivity, CariSayurActivity::class.java))
+        }
+
+    }
+
+    private fun startCamera() {
+        currentImageUri = getImageUri(this)
+        launcherIntentCamera.launch(currentImageUri)
     }
 
     private fun getPermission() {
@@ -83,5 +91,15 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
+    }
+
+    private val launcherIntentCamera = registerForActivityResult(
+        ActivityResultContracts.TakePicture()
+    ) { isSuccess ->
+        if (isSuccess) {
+            val intent = Intent(this, GalleryActivity::class.java)
+            intent.putExtra("imageUri", currentImageUri.toString())
+            startActivity(intent)
+        }
     }
 }
