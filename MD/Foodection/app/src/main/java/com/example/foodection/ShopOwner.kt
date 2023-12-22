@@ -8,7 +8,7 @@ class ShopOwner {
     private var phone: String? = null
     private var description: String? = null
     private var userID: String? = null
-    private var userName: String? = null
+    private var username: String? = null
     private var photoShop : String? = null
     private var owner : String? = null
 
@@ -80,11 +80,11 @@ class ShopOwner {
     }
 
     fun getUserName(): String?{
-        return userName
+        return username
     }
 
-    fun setUserName(userName : String?){
-        this.userName= userName
+    fun setUserName(username : String?){
+        this.username= username
     }
 
     fun getphotoShop(): String?{

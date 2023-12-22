@@ -24,7 +24,7 @@
             android:id="@+id/tvgoodsName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nama Barang"
+            android:text="@string/nama_barang"
             android:textSize="14sp"
             android:layout_margin="5dp"
             android:textColor="@color/black"
@@ -35,7 +35,7 @@
             android:id="@+id/tvgoodsPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rp.120.000"
+            android:text="@string/harga_barang"
             android:textStyle="bold"
             android:textSize="12sp"
             android:textColor="@color/black"
@@ -45,7 +45,7 @@
             android:id="@+id/tvgoodsStock"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Stok: 12"
+            android:text="@string/stok"
             android:textSize="10sp"
             android:layout_margin="5dp"/>
 

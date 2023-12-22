@@ -46,7 +46,7 @@
                 android:layout_marginBottom="2dp"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:text="WIRS Coffe 3.0"
+                android:text="@string/nama_toko"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -59,7 +59,7 @@
                 android:drawableLeft="@drawable/pemiliktokodetail"
                 android:drawablePadding="5dp"
                 android:maxLines="1"
-                android:text="Al"
+                android:text="@string/nama_pemilik"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
 
@@ -71,7 +71,7 @@
                 android:drawableLeft="@drawable/phonesmall"
                 android:drawablePadding="5dp"
                 android:maxLines="1"
-                android:text="082196322423"
+                android:text="@string/profile_nomor_telepon"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
 
@@ -82,7 +82,7 @@
                 android:layout_marginBottom="2dp"
                 android:drawableLeft="@drawable/petatokosmall"
                 android:drawablePadding="5dp"
-                android:text="Jl.Muhajirin"
+                android:text="@string/lokasi"
                 android:textColor="#8D7A7A"
                 android:textSize="14sp" />
 

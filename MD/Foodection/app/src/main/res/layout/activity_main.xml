@@ -41,15 +41,6 @@
         app:layout_constraintStart_toEndOf="@+id/profile"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-    <TextView
-        android:id="@+id/cari_toko"
-        android:layout_width="40dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="104dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/baseline_shopping_cart_24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView8"
@@ -75,12 +66,12 @@
         app:layout_constraintTop_toTopOf="@+id/textView8" />
 
     <TextView
-        android:id="@+id/live_scan_btn"
+        android:id="@+id/cari_toko"
         android:layout_width="69dp"
         android:layout_height="70dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="80dp"
-        android:background="@drawable/ic_scan"
+        android:background="@drawable/baseline_shopping_cart_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         tools:ignore="MissingConstraints" />
@@ -90,12 +81,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/home_live_scan"
+        android:text="@string/marketplace"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/live_scan_btn"
-        app:layout_constraintStart_toStartOf="@+id/live_scan_btn"
-        app:layout_constraintTop_toBottomOf="@+id/live_scan_btn" />
+        app:layout_constraintEnd_toEndOf="@+id/cari_toko"
+        app:layout_constraintStart_toStartOf="@+id/cari_toko"
+        app:layout_constraintTop_toBottomOf="@+id/cari_toko" />
 
     <TextView
         android:id="@+id/open_gallery"
